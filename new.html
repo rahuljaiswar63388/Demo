@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        :root {
+            --main-bg-color: rgb(0 147 255);
+            --main-bg-color2:rgb(0 0 0 );
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+
+        a {
+            text-decoration: none;
+            list-style: none;
+
+            text-align: center;
+
+        }
+
+        header {
+            background-color: var(--main-bg-color);
+            height: 30px;
+
+        }
+
+        .re {
+            position: relative;
+            top: -12px;
+        }
+
+        .image {
+            border-top-left-radius: 80px 18px;
+            border-top-right-radius: 80px 18px;
+        }
+
+        p {
+            font-size: xx-small;
+            /* font-weight: lighter; */
+        }
+
+        .he {
+            color: rgb(0 201 235)
+        }
+
+        .un {
+            font-weight: bolder;
+
+            margin: 0px 520px;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .abc {
+            display: inline-flex;
+            margin-right: 3px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .res img {
+            height: 165px;
+            width: 100%;
+        }
+
+        .bg-secondary {
+            background-color: black;
+        }
+
+        .form-control {
+            width: 90%;
+
+        }
+
+        input {
+            height: 30px;
+        }
+
+        .mar {
+            margin-top: 3px;
+        }
+
+        footer {
+            background-color: rgb(212, 212, 212);
+        }
+
+        @media only screen and (max-width: 991px) {
+            .res img {
+                height: 300px;
+            }
+        }
+
+        @media only screen and (max-width: 766px) {
+            header{
+                height: 100%;
+            }
+            .re {
+                position: relative;
+                top: 3px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class=" container ">
+            <div class="row headar  text-center ">
+                <div class="col-md-6">
+                    <a class="text-light mar" href="#"><img src="/img/call_white_24dp.svg" alt="">255-255-255</a>
+                </div>
+                <div class="col-md-6">
+                    <a class="text-light mar" href="#"><img src="/img/email_white_24dp.svg"
+                            alt="">info@tomorrowsgenius.com</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container re">
+        <div class="container text-center">
+            <img class="image" src="/img/IMG_20210516_213042.jpg" alt="" width="130" height="80">
+            <h5 class="he">TOMORRROW'S GENIUS
+                <p>EMPOWER YOUR LEARNING</p>
+            </h5>
+            <h6>Please provide your information to register for Math Bootcamp</h6>
+            <hr class="un" style="margin-bottom: 15px;">
+        </div>
+    </div>
+
+
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                <div class="res">
+                    <img src="/img/photo-1616441137046-40be4e6f3378.jpeg" alt="">
+                </div>
+                <div class="res">
+                    <h3 class="bg-warning text-center" style="margin: 0px ;">Online Pre-Formatted Live Instruction
+                    </h3>
+                </div>
+                <div class="res">
+                    <img src="/img/photo-1509062522246-3755977927d7.jpeg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-12 col-sm-12 col-12" style="border: 2px solid green;">
+
+                <div class="row ">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12  ">
+                        <div class="form-group">
+                            <label style="margin-left: 5px;">First Name</label>
+                            <span class="text-danger">*</span><br>
+                            <input class="form-control " type="text" style="margin-left: 10px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
+                        <div class="form-group">
+                            <label style="margin-left: 5px;">Last Name</label>
+                            <span class="text-danger">*</span><br>
+                            <input class="form-control " type="text" style="margin-left: 10px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12  ">
+                        <div class="form-group">
+                            <label style="margin-left: 5px;">Email</label>
+                            <span class="text-danger">*</span><br>
+                            <input class="form-control " type="email" name="email" id="email"
+                                style="margin-left: 10px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12  ">
+                        <div class="form-group">
+                            <label style="margin-left: 5px;">Password</label>
+                            <span class="text-danger">*</span><br>
+                            <input class="form-control " type="password" name="password" id="password"
+                                style="margin-left: 10px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
+                        <div class="form-group">
+                            <label style="margin-left: 5px;">Comfirm Password</label>
+                            <span class="text-danger">*</span><br>
+                            <input class="form-control " type="password" name="password" id="password"
+                                style="margin-left: 10px;">
+                        </div>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="abc">
+                            <input type="checkbox" name="click" id="click">
+                            <span style="font-size:x-small;">We would like to keep you informed about our products
+                                &services that would of
+                                interest to ypu. By clicking the register below you agree that we may contact you.
+                                We take your privacy very seriously & the information you provide on this website
+                                will be held with us only & shall not be shared with others without your consent. If
+                                you prefer to opt-out from any all kind of communication, please reply back to
+                                opt-out through email at <span
+                                    style="color: var(--main-bg-color);">info@tomorrowsgenius.com</span> </span>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="db" style="margin:0px 10px;">
+                    <div class="btn ">
+                        <button class="bg-success" style="width: 200px;" type="submit">REGISTER</button>
+                    </div>
+                    <div class="btn">
+                        <button style="width: 100px;" type="reset">reset</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class=" container-fuild " style="margin-top:15px; padding-top:10px">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <h6>ABOUT US</h6>
+                        <p style="font-weight: bold;">Tommorrow's Genius partners with schools, families and
+                            community-based organizations to provide personalized online instruction to studends of all
+                            backgrounds and from all walks of life. We believe in academic inclusion for all.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <h6>CONTACT</h6>
+                        <p style="font-weight: bold;"><img src="/img/location.svg" alt=""> International Corporate
+                            Center,<br> 555 Theodore Fremd Avenue, Suite A102,<br> Rye, NY 10580 </p>
+                        <p style="font-weight: bold;"><img src="/img/call_black_24dp.svg" alt="">255-255-255</p>
+                        <p style="font-weight: bold;"><img src="/img/email_black_24dp.svg"
+                                alt="">infi@tomorrowsgenius.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fuild text-center bg-primary">
+                <div class="text-light" style="height: 40px; padding:8px">
+                    <p style="font-weight:bold;">2021. Tomorrow's Genius. A division of GreenPoint Global</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
